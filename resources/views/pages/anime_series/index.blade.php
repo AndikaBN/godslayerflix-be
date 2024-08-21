@@ -11,7 +11,7 @@
     <div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1>Genre</h1>
+                <h1>Anime Series</h1>
                 <div class="section-header-button">
                     <a href="{{ route('anime_series.create') }}" class="btn btn-primary">Add New</a>
                 </div>

@@ -11,7 +11,7 @@
     <div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1>Genre</h1>
+                <h1>Anime Movie</h1>
                 <div class="section-header-button">
                     <a href="{{ route('anime_movies.create') }}" class="btn btn-primary">Add New</a>
                 </div>
@@ -74,10 +74,10 @@
                                                 --}}
                                             <th>Title</th>
                                             <th>Genre</th>
-                                            <th>Image</th>
+
                                             <th>Description</th>
                                             <th>Status</th>
-                                            <th>Video</th>
+
                                         </tr>
                                         @foreach ($anime_movies as $anime_movie)
                                             <tr>
@@ -85,10 +85,10 @@
                                                 <td>{{ $anime_movie->title }}
                                                 </td>
                                                 <td>{{ $anime_movie->genre->name }}</td>
-                                                <td>{{ $anime_movie->image }}</td>
+
                                                 <td>{{ $anime_movie->description }}</td>
                                                 <td>{{ $anime_movie->status }}</td>
-                                                <td>{{ $anime_movie->video }}</td>
+
                                                 <td>
                                                     <div class="d-flex justify-content-center">
                                                         <a href='{{ route('anime_movies.edit', $anime_movie->id) }}'

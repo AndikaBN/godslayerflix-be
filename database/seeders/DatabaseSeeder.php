@@ -21,6 +21,6 @@ class DatabaseSeeder extends Seeder
 
         \App\Models\Genre::factory(10)->create();
 
-        \App\Models\AnimeMovie::factory(10)->create();
+        // \App\Models\AnimeMovie::factory(10)->create();
     }
 }

@@ -7,6 +7,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+//get all user
+Route::middleware('auth:sanctum')->get('/users', [App\Http\Controllers\Api\AuthController::class, 'getUser']);
+
 Route::post('/login', [App\Http\Controllers\Api\AuthController::class, 'login']);
 
 Route::post('/register', [App\Http\Controllers\Api\AuthController::class, 'register']);

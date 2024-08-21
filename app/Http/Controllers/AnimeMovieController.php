@@ -48,7 +48,7 @@ class AnimeMovieController extends Controller
         if ($request->hasFile('video')) {
             $video = $request->file('video');
             $video->storeAs('public/movies', $anime_movie->id . '.' . $video->getClientOriginalExtension());
-            $anime_movie->video = 'storage/movies/videos/' . $anime_movie->id . '.' . $video->getClientOriginalExtension();
+            $anime_movie->video = 'storage/movies/' . $anime_movie->id . '.' . $video->getClientOriginalExtension();
             $anime_movie->save();
         }
 
@@ -97,7 +97,7 @@ class AnimeMovieController extends Controller
         if ($request->hasFile('video')) {
             $video = $request->file('video');
             $video->storeAs('public/movies', $anime_movie->id . '.' . $video->getClientOriginalExtension());
-            $anime_movie->video = 'storage/movies/videos/' . $anime_movie->id . '.' . $video->getClientOriginalExtension();
+            $anime_movie->video = 'storage/movies/' . $anime_movie->id . '.' . $video->getClientOriginalExtension();
             $anime_movie->save();
         }
 
